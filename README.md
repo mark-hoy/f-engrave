@@ -18,7 +18,16 @@ Seem to work on my M1 MacMini on OSX Ventura 13.4.1, but I am new to using the p
 On 13.4.1, I found a lot more fonts in /System/Library/Fonts/Supplemental instead of /Library/Fonts. I'm uncertain 
 of where to fix this (probably the patch file).
 
-I'm unsure of how to create the macOS-VERSION.patch but everything at least seems to build and run with my changes.
+I'm unsure of how to properly create the macOS-VERSION.patch as my patch file seems rather large but everything at 
+least seems to build and run with my changes.
+
+$ diff -Naur f-engrave.py f-engrave-163.py > macOS.patch.v175
+$ diff -Naur TTF2CXF_STREAM/Makefile TTF2CXF_STREAM-163/Makefile >> macOS.patch.v175 
+$ ls -lt macOS.patch*
+-rw-r--r--  1 mark_hoy  staff  422287 Jul 18 11:33 macOS.patch.v175
+-rw-r--r--  1 mark_hoy  staff   21125 Jul 18 11:07 macOS.patch
+ 
+
 
 Using:
 Homebrew 4.0.28
