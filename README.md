@@ -21,19 +21,19 @@ of where to fix this (probably the patch file).
 I'm unsure of how to properly create the macOS-VERSION.patch as my patch file seems rather large but everything at 
 least seems to build and run with my changes.
 
-$ diff -Naur f-engrave.py f-engrave-163.py > macOS.patch.v175
-$ diff -Naur TTF2CXF_STREAM/Makefile TTF2CXF_STREAM-163/Makefile >> macOS.patch.v175 
-$ ls -lt macOS.patch*
--rw-r--r--  1 mark_hoy  staff  422287 Jul 18 11:33 macOS.patch.v175
--rw-r--r--  1 mark_hoy  staff   21125 Jul 18 11:07 macOS.patch
+$ diff -Naur f-engrave.py f-engrave-163.py > macOS.patch.v175  
+$ diff -Naur TTF2CXF_STREAM/Makefile TTF2CXF_STREAM-163/Makefile >> macOS.patch.v175  
+$ ls -lt macOS.patch*  
+-rw-r--r--  1 mark_hoy  staff  422287 Jul 18 11:33 macOS.patch.v175  
+-rw-r--r--  1 mark_hoy  staff   21125 Jul 18 11:07 macOS.patch  
  
 
 
 Using:
-Homebrew 4.0.28
-Python 3.11.4
-potrace 1.16
-PyInstaller 5.13.0
+* Homebrew 4.0.28
+* Python 3.11.4
+* potrace 1.16
+* PyInstaller 5.13.0
 
 NOTES:
 There are some hard to read color combinations of white letters with a white or yellow background. Highlighting with
