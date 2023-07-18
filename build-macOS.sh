@@ -8,7 +8,7 @@
 cd -P -- $(dirname -- "$0")/
 
 # Set this to the version of python we want to use (via pyenv)
-PYTHON_VERSION=3.9.1
+PYTHON_VERSION=3.11.4
 
 # Call getopt to validate the provided input. 
 VENV_DIR=build_env.$$
