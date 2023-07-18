@@ -9,16 +9,28 @@ The official F-Engrave and instructions are at Scorchworks:
 
 >    http://www.scorchworks.com/Fengrave/fengrave.html
 
---
+--> mark-hoy:
 This is a Fork of the excellent work by stephenhouser for OSX.
 
 This version was tested with V1.75 of F-Engrave and needed a patch to include pyclipper in the requirements.txt file.
 
 Seem to work on my M1 MacMini on OSX Ventura 13.4.1, but I am new to using the program.
+On 13.4.1, I found a lot more fonts in /System/Library/Fonts/Supplemental instead of /Library/Fonts. I'm uncertain 
+of where to fix this (probably the patch file).
 
+I'm unsure of how to create the macOS-VERSION.patch but everything at least seems to build and run with my changes.
+
+Using:
+Homebrew 4.0.28
 Python 3.11.4
+potrace 1.16
+PyInstaller 5.13.0
 
---
+NOTES:
+There are some hard to read color combinations of white letters with a white or yellow background. Highlighting with
+the mouse helps in these boxes.
+
+<--
 
 This fork is merely to add packaging for OSX systems, creating a clickable
 'Applicaion' that can be installed on any OSX system. This eliminates having
