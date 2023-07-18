@@ -9,6 +9,17 @@ The official F-Engrave and instructions are at Scorchworks:
 
 >    http://www.scorchworks.com/Fengrave/fengrave.html
 
+--
+This is a Fork of the excellent work by stephenhouser for OSX.
+
+This version was tested with V1.75 of F-Engrave and needed a patch to include pyclipper in the requirements.txt file.
+
+Seem to work on my M1 MacMini on OSX Ventura 13.4.1, but I am new to using the program.
+
+Python 3.11.4
+
+--
+
 This fork is merely to add packaging for OSX systems, creating a clickable
 'Applicaion' that can be installed on any OSX system. This eliminates having
 to run F-Engrave from a Terminal prompt.
